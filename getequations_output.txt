@@ -1,0 +1,35 @@
+d(G)/dt = 1/unnamed*(ReactionFlux4 - ReactionFlux5)
+d(Gd)/dt = 1/unnamed*(-ReactionFlux4 + ReactionFlux6)
+d(Ga)/dt = 1/unnamed*(ReactionFlux5 - ReactionFlux6)
+d(RL)/dt = 1/unnamed*(ReactionFlux1 - ReactionFlux3)
+d(L)/dt = 1/unnamed*(-ReactionFlux1)
+d(R)/dt = 1/unnamed*(-ReactionFlux1 - ReactionFlux2)
+d(Gbg)/dt = 1/unnamed*(-ReactionFlux4 + ReactionFlux5)
+
+Fluxes:
+ReactionFlux1 = kRL*L*R-kRLm*RL
+ReactionFlux2 = kRdo*R-kRs
+ReactionFlux3 = kRD1*RL
+ReactionFlux4 = kG1*Gd*Gbg
+ReactionFlux5 = kGa*G*RL
+ReactionFlux6 = kGd*Ga
+
+Parameter Values:
+kRLm = 0.01
+kRL = 3.32e-18
+kRdo = 0.0004
+kRs = 4
+kRD1 = 0.004
+kG1 = 1
+kGa = 1e-05
+kGd = 0.11
+unnamed = 1
+
+Initial Conditions:
+G = 7000
+Gd = 3000
+Ga = 0
+RL = 0
+L = 6.022e+17
+R = 10000
+Gbg = 3000

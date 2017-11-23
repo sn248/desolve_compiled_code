@@ -1,0 +1,9 @@
+Unit: milliseconds
+                                                                                                                               expr
+  sim.data.df1 <- as.data.frame(vode(IC, TIME, ODE_gprotein, p,      mf = 22, rtol = 0.001, atol = 1e-06, maxord = 5, verbose = F))
+ sim.data.df2 <- as.data.frame(vode(IC, TIME, odes_gprotein, p,      mf = 22, rtol = 0.001, atol = 1e-06, maxord = 5, verbose = F))
+
+ 
+       min        lq      mean    median        uq      max neval
+ 27.801954 29.543624 31.213758 30.565434 31.399140 86.28537   100
+  8.188846  8.577824  9.177491  8.817025  9.437214 18.94304   100
